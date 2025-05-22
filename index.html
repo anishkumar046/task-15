@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Array Operations</title>
+</head>
+<body>
+    <h1>JavaScript Array Operations</h1>
+
+    <h2>1. Sorted Array</h2>
+    <p id="sorted"></p>
+
+    <h2>2. Concatenated Array</h2>
+    <p id="concatenated"></p>
+
+    <h2>3. Array after Removing First Element</h2>
+    <p id="updatedArray"></p>
+    <p id="removedElement"></p>
+
+    <script>
+        // 1. Sort a JavaScript Array
+        let numbers = [5, 3, 8, 1, 4];
+        numbers.sort(function(a, b) {
+            return a - b;
+        });
+        document.getElementById("sorted").innerText = "Sorted Array: " + numbers;
+
+        // 2. Concatenate Two Arrays and Store in a New Array
+        let array1 = [10, 20, 30];
+        let array2 = [40, 50, 60];
+        let combinedArray = array1.concat(array2);
+        document.getElementById("concatenated").innerText = "Concatenated Array: " + combinedArray;
+
+        // 3. Remove First Element from JavaScript Array
+        let fruits = ["Apple", "Banana", "Cherry"];
+        let removedElement = fruits.shift(); // Removes first element
+        document.getElementById("updatedArray").innerText = "Updated Fruits Array: " + fruits;
+        document.getElementById("removedElement").innerText = "Removed Element: " + removedElement;
+    </script>
+</body>
+</html>
